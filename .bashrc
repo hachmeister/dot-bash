@@ -91,18 +91,10 @@ if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-### homeshick
-#source ~/.homesick/repos/homeshick/homeshick.sh
-#source ~/.homesick/repos/homeshick/completions/homeshick-completion.bash
-
 ### liquidprompt
 if [ -f ~/apps/liquidprompt/liquidprompt ]; then
   [[ $- = *i* ]] && source ~/apps/liquidprompt/liquidprompt
 fi
-
-### base16-shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
-#[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Load all configurations
 for config in ~/.bash/*[^~]
