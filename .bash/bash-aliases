@@ -1,0 +1,6 @@
+# General aliases
+alias l='ls -l'
+alias ll='ls -la'
+
+# The silver searcher
+alias agl='ag --paper "less -R"'

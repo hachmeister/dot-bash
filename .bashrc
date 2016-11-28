@@ -104,6 +104,12 @@ fi
 BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 #[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
+# Load all configurations
+for config in ~/.bash/*[^~]
+do
+  source $config
+done
+
 # Local changes for bash environment
 if [ -f ~/.bash_local ]; then
   . ~/.bash_local
