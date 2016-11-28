@@ -91,11 +91,6 @@ if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-### liquidprompt
-if [ -f ~/apps/liquidprompt/liquidprompt ]; then
-  [[ $- = *i* ]] && source ~/apps/liquidprompt/liquidprompt
-fi
-
 # Load all configurations
 for config in ~/.bash/*[^~]
 do
