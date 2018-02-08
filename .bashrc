@@ -101,3 +101,8 @@ done
 if [ -f ~/.bash_local ]; then
   . ~/.bash_local
 fi
+
+# add path
+if [ -d ~/.bin ]; then
+  export PATH="~/.bin:$PATH"
+fi
